@@ -1,11 +1,15 @@
     <?php get_header(); ?>
     <div class="l-contents">
         <div class="l-contents__left width-pc">
-            <div class="inner">
-                    <div class="">
+            <div class="p-archive">
+                <div class="p-archive__img">
+                    <div class="p-archive__title">
                         <h2>Search:</h2>
                         <p><?php single_cat_title(); ?></p>
                     </div>
+                </div>
+            </div>
+            <div class="inner">
                     <div class="p-archive-text inner ">
                         <h3>小見出しが入ります</h3>
                         <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
