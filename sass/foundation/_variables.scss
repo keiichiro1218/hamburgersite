@@ -1,0 +1,7 @@
+$breakpoints: (
+  'pc': 'screen and (min-width: 1199px)',
+  'pcwide': 'screen and (min-width: 1500px)',
+  'md': 'screen and (max-width: 1199px)',
+  'mb': 'screen and (max-width: 620px)',
+  'sp': 'screen and (max-width: 500px)',
+) !default;

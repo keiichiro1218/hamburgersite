@@ -1,0 +1,40 @@
+.p-404 {
+    margin-top: 50px;
+    text-align: center;
+
+}
+
+.p-404__head {
+    font-size: 50px;
+    color: red;
+
+}
+
+.p-404__lead {
+    font-size: 30px;
+    margin-top: 15px;
+}
+
+.p-404__lead2 {
+    margin-top: 30px;
+}
+
+.p-404__button {
+    margin-top: 60px;
+    margin-bottom: 150px;
+
+    @include mq(md){
+        margin-bottom: 200px;
+    }
+
+    >a {
+        background: #9D8670;
+        color: white;
+        padding: 30px 42px;
+        border-radius: 40px;
+        font-size: 16px;
+        font-weight: bold;
+        display: inline-block;
+        text-decoration: none;
+    }
+}

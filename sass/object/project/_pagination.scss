@@ -1,0 +1,41 @@
+.p-pagenation {
+    
+    height: 240px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+    @include mq(md) {
+        width: 100%;
+    
+    }
+
+    & ul {
+        border: none;
+    }
+
+}
+
+.page-numbers {
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    color: #3C2B1C;
+    border: solid 1px #3C2B1C;
+    padding: 10px;
+
+    li {
+        padding: 0 8px;
+    }
+
+}
+
+.prev , .next {
+    border: none;
+}
+
+.current {
+    border: solid 1px #3C2B1C;
+                    background-color: #3C2B1C;
+                    color: #fff;
+}

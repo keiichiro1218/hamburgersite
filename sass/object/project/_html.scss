@@ -1,0 +1,22 @@
+.p-html {
+
+    @include mq(pc) {
+        // width: 75%;
+        
+    }
+}
+
+.p-html__inner {
+    background: #F5F5F5;
+
+}
+
+.p-html__text {
+    padding: 50px;
+
+    pre {
+        text-align: left;
+        display: inline-block;
+        width: 100%;
+    }
+}

@@ -1,0 +1,44 @@
+.l-contents {
+    display: flex;
+    position: relative;
+}
+
+.l-contents__left {
+   width: 100%;
+
+   @include mq(pc) {
+    width: 75%;
+}
+
+}
+
+.l-contents__right {
+    
+        margin-top: -217px;
+        background: #F2EDE9;
+        z-index: 2000;
+        transition: 1s;
+        display: none;
+        height: inherit;
+        display: none;
+        z-index: 2000;
+        position: relative;
+        
+        &.is-active {
+           display: block;
+           transition: 1s;
+           position: fixed;
+           top: 217px;
+           bottom: 0;
+           right: 0;
+           width: 60%;
+           overflow-y: auto;
+           
+        }
+    
+    @include mq(pc) {
+        width: 25%;
+        
+        display: block;
+    }
+}

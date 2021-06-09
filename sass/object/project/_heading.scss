@@ -1,0 +1,22 @@
+.p-heading {
+    margin-top: 30px;
+
+    // @include mq(mb) {
+    //     margin: 30px 20px 0;       
+    // }
+
+    h2 {
+        font-size: 36px;
+        margin-bottom: 60px;
+    }
+
+    h3 {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+    
+    p {
+        margin-bottom: 60px;
+    }
+}
+

@@ -1,0 +1,15 @@
+@charset "utf-8";
+/* /---------------------------------
+テーマとしてWPに認識させるための記述↓
+---------------------------------/ */
+/*
+theme Name: hamburgersite
+Author: Keiichiro Chiba
+Description: 課題テーマ
+version： 1.0.0
+Text Domain: hamburgersite
+License:
+License URI:
+ Tested up to: 5.7.2
+ Requires PHP: 7.3.5
+*/

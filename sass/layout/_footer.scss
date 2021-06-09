@@ -1,0 +1,46 @@
+.l-footer {
+    background: #9D8670;
+    height: 150px;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.l-footer__contents p{
+    text-align: center;
+    color: white;
+    
+    small {
+        margin: 0 auto;
+    }
+}
+
+.l-footer__content {
+    color: #ffff;
+    display: inline-block;
+
+    ul {
+        display: flex;
+        list-style: none;
+        
+
+        li {
+
+            >a {
+                color: white;
+                text-decoration: none;
+                padding: 5px;
+
+            }
+
+            
+        }
+        li:nth-child(n + 2) {
+            border-left: solid 2px white;
+        }
+    }
+
+}

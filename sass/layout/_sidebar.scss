@@ -1,0 +1,28 @@
+.l-sidebar {
+    padding-left: 46px;
+    position: relative;
+
+    @include mq(pc){
+        padding-top: 40px;
+    }
+
+    @include mq(sp){
+        padding-left: 20px;
+    }
+
+    > p {
+        display: block;
+    font-size: 34px;
+    font-weight: 600;
+    color: #707070;
+    margin-top: 82px;
+    margin-bottom: 90px;
+
+    @include mq(md){
+        display: none;
+
+    }
+
+    
+    }
+}

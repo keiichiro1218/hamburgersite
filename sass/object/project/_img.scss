@@ -1,0 +1,17 @@
+.p-img {
+
+    
+}
+
+.p-img__img {
+    
+    margin: 0 120px;
+
+    @include mq(mb) {
+            margin: 50px;
+    }
+
+    img {
+        width: 100%;
+    }
+}

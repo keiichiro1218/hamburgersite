@@ -1,0 +1,19 @@
+.p-quote__inner {
+    // margin: 0 60px;
+    margin-bottom: 60px;
+    padding: 50px 50px 60px 50px;
+    background: #F5F5F5;
+
+    @include mq(mb) {
+        // margin: 0 20px 30px;
+        padding: 20px;
+    }
+}
+
+.p-quote__text {
+    margin-bottom: 60px;
+
+    @include mq(mb) {
+        margin-bottom: 30px;       
+    }
+}

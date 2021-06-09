@@ -1,0 +1,28 @@
+.p-main-visual__img {
+
+    position: relative;
+    background: url(../img/about-shop.png);
+    height: 500px;
+
+    @include mq(mb) {
+        
+       height: 225px;
+    }
+
+    h1 {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 60px;
+        font-weight: bold;
+        color: #FFFFFF;
+        margin: left;
+        margin-left: 86px;
+
+        @include mq(mb) {
+            font-size: 36px;
+            margin-left: 1em;
+        }
+    }
+}
+
