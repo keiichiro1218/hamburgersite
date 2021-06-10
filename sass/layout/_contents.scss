@@ -1,10 +1,11 @@
 .l-contents {
     display: flex;
-    position: relative;
+    // position: relative;
 }
 
 .l-contents__left {
    width: 100%;
+   position: relative;
 
    @include mq(pc) {
     width: 75%;

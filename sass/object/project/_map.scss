@@ -1,6 +1,15 @@
 .p-map {
-    position: relative;
     width: 100%;
+
+    @include mq(pc) {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+}
+
+.p-map__item {
+    position: relative;
     height: 415px;
 
     @include mq(mb) {
@@ -42,5 +51,4 @@
 
         }
 }
-
 
