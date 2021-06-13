@@ -1,7 +1,7 @@
     <?php get_header(); ?>
         <div class="l-contents">
             <div class="l-contents__left width-pc">
-                <div class="p-main-visual__img">
+                <div class="p-main-visual">
                     <h1><?php the_title(); ?></h1>
                 </div>
                 <div class="inner-main">

@@ -20,16 +20,16 @@
         while ( have_posts() ) :
         the_post();
         ?>
-        <div class="p-menu-card inner-main" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+        <div class="p-menu inner-main" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
             <?php if (has_post_thumbnail()) : ?>
                 <?php the_post_thumbnail('large'); ?>
                 <?php else : ?>
                     <img src="<?php echo esc_url( get_template_directory_uri() ) ?>/img/archive.png" alt="デフォルト画像" />
             <?php endif ; ?>
-            <div class="p-menu-card__text">
+            <div class="p-menu__text">
                 <h4><?php the_title(); ?></h4>
                 <?php the_excerpt(); ?>
-                <div class="p-menu-card__button">
+                <div class="p-menu__button">
                         <a class="c-button-detail" href="<?php the_permalink(); ?>">詳しく見る</a> 
                 </div>
             </div>

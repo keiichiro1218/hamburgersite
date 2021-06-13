@@ -7,31 +7,31 @@
                         </h2>
                     </div>
                     <div class="p-front inner">
-                        <div class="p-front__card p-front__takeout">
-                            <figcaption class="p-front__card-text">
-                                <h2 class="p-front__card-title"><a href="<?php echo esc_url(get_page_link(80)); ?>">Take Out</a></h2>
+                        <div class="p-card p-front__takeout">
+                            <figcaption class="p-card__text">
+                                <h2 class="p-card__title"><a href="<?php echo esc_url(get_page_link(80)); ?>">Take Out</a></h2>
                             </figcaption>
-                            <figcaption class="p-front__card-details">
-                                <div class="p-front__card-detail">
+                            <figcaption class="p-card__details">
+                                <div class="p-card__detail">
                                     <h3>小見出しが入ります</h3>
                                     <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
                                 </div>
-                                <div class="p-front__card-detail">
+                                <div class="p-card__detail">
                                     <h3>小見出しが入ります</h3>
                                     <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
                                 </div>
                             </figcaption>
                         </div>
-                        <div class="p-front__card p-front__eatin">
-                            <figcaption class="p-front__card-text">
-                                <h2 class="p-front__card-title"><a href="<?php echo esc_url(get_page_link(82)); ?>">Eat In</a></h2>
+                        <div class="p-card p-front__eatin">
+                            <figcaption class="p-card__text">
+                                <h2 class="p-card__title"><a href="<?php echo esc_url(get_page_link(82)); ?>">Eat In</a></h2>
                             </figcaption>
-                            <figcaption class="p-front__card-details">
-                                <div class="p-front__card-detail">
+                            <figcaption class="p-card__details">
+                                <div class="p-card__detail">
                                     <h3>小見出しが入ります</h3>
                                     <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
                                 </div>
-                                <div class="p-front__card-detail">
+                                <div class="p-card__detail">
                                     <h3>小見出しが入ります</h3>
                                     <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
                                 </div>

@@ -1,22 +1,18 @@
 .p-flex-container {
-    
-    
-}
-
-.p-flex-container__inner {
     margin-top: 240px;
-}
 
-.p-flex-container__items {
-    display: flex;
-    flex-wrap: wrap;
-  
-    @include mq(mb) {
-        display: block;
-        
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+      
+        @include mq(mb) {
+            display: block;
             
+                
+        }
     }
 }
+
 
 .p-flex-container__item {
     

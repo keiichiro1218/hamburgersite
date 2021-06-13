@@ -1,18 +1,17 @@
 .p-lists {
     margin-top: 60px;
     margin-bottom: 60px;
+
+    .p-lists__list {
+        margin-left: 110px;
     
-
-}
-
-.p-list {
-    margin-left: 110px;
-
-    &:nth-child(-n +2){
-        margin-bottom: 20px;
+        &:nth-child(-n +2){
+            margin-bottom: 20px;
+        }
+    
+        &:nth-child(2){
+            margin-left: 120px;
+        }
     }
 
-    &:nth-child(2){
-        margin-left: 120px;
-    }
 }

@@ -8,10 +8,8 @@
 </head>
 <body <?php body_class(); ?>>
     <header class="l-header">
-        <div class="l-header__top">
-            <div class="c-menu-button">
-                <button class="c-menu-button__button">Menu</button>
-            </div>
+        <div class="c-menu-button">
+            <button class="c-menu-button__button">Menu</button>
         </div>
         <div class="l-header__inner">
             <div class="l-header__logo">
@@ -20,6 +18,7 @@
                 </a>
             </div>
             <?php get_search_form(); ?>
+        </div>
     </header>
      
         

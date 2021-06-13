@@ -54,11 +54,6 @@ html {
     }
 }
 
-.row-revers {
-    flex-direction: row-reverse;
-
-}
-
 input.font-awesome {
     font-family: "Font Awesome 5 Free";
     content: '\f002';
@@ -67,5 +62,13 @@ input.font-awesome {
     padding-left: 4px;
     
   }
-  
-  
+
+.row-revers {
+    flex-direction: row-reverse;
+
+    p {
+        margin-right: 21px;
+        margin-left: 0;
+
+    }   
+}

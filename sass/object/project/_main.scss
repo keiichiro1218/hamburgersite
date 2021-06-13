@@ -18,20 +18,20 @@
         height: 225px;
         
     }
-}
-
-.p-main__title {
-    font-size: 44px;
-    color: #EAEAEA;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    margin-left: 40px;
-
-    @include mq(mb) {
-        font-size: 36px;
+    
+    &__title {
+        font-size: 44px;
+        color: #EAEAEA;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        margin-left: 40px;
+        
+        @include mq(mb) {
+            font-size: 36px;
+        }
+        
     }
-
 }
 
 

@@ -3,11 +3,12 @@
     background: #000000;
     z-index: -15;
 
-    .p-archive__img {
+    &__img {
         height: 240px;
     background: url(../img/burg1.png) no-repeat center;
     
     }
+}
 
     .p-archive__title {
         color: #FFFFFF;
@@ -44,7 +45,6 @@
             }
        }
     }
-}
 
 .p-archive-text {
     margin-top: 36px;
