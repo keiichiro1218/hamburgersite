@@ -20,7 +20,7 @@ function my_setup()
 function my_script_init()
 {
 wp_enqueue_style( 'font-awesome', '//use.fontawesome.com/releases/v5.6.1/css/all.css', array(), '5.6.1' );
-wp_enqueue_style('my', get_template_directory_uri() . '/css/style.css', array(), '1.0.0', 'all');
+wp_enqueue_style( 'my', get_stylesheet_directory_uri() . '/css/style.css?'. date("ymdHis", filemtime( get_stylesheet_directory() . '/css/style.css')), array());
 wp_enqueue_script('my', get_template_directory_uri() . '/js/script.js', array( 'jquery' ), '1.0.0', true);
 
 if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
@@ -29,7 +29,13 @@ if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 // テーマチェックのエラー解決
 
 }
+
 add_action('wp_enqueue_scripts', 'my_script_init');
+
+
+
+
+
 
 
 add_theme_support( 'title-tag' );
