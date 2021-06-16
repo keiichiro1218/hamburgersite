@@ -23,7 +23,7 @@
         h2 {
             font-size: 60px;
 
-            @include mq(md) {
+            @include mq(sp) {
                font-size: 30px;
         
             }
@@ -34,14 +34,12 @@
             font-size: 28px;
             padding-left: 20px;
             vertical-align: middle;
-
-            @include mq(md) {
+            padding-top: 10px;
+            
+            @include mq(sp) {
                 font-size: 20px;
+                padding-top: 0;
         
-            }
-
-            @include mq(pc) {
-                padding-top: 10px;
             }
        }
     }

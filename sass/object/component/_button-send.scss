@@ -4,11 +4,8 @@
    border: solid 1px #707070;
    background: linear-gradient(#F2EDE9, #DED8D3);
    
-    
-   @include mq(mb) {
-            
-            padding: 30px 145px;
+   @include mq(mb) {      
+      padding: 30px 145px;
 
    }
-
-    }
+}

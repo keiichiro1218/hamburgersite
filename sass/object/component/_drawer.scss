@@ -1,39 +1,9 @@
-// .c-drawer__content {
-//     position: absolute;
-//     right: 0;
-//     top: 0;
-//     background: #F2EDE9;
-//     z-index: 2000;
-//     transition: .5s;
-//     display: none;
-//     height: 100%;
-    
-   
-    
-    
-    
-//     &.is-active {
-//         display: block;
-//        width: 367px;
-//        transition: .5s;
-       
-//     }
-
-//     @include mq(pc) {
-//         width: 25%;
-//         display: block;
-        
-//     }
-// }
-
 .c-drawer__icon {
-    
     top: 0;
     right: 0;
     position: absolute;
     z-index: 2300;
     display: none;
-    // display: none;
 
     &.is-active {
         display: inline-block;
@@ -77,28 +47,27 @@
     ul {
         
         li {
-                list-style: none;
-                font-size: 24px;
-                color: #707070;
-                font-weight: bold;
-                font-family: "M+ 1m";
-                margin-top: 43px;
-                margin-bottom: 20px;
+            list-style: none;
+            font-size: 24px;
+            color: #707070;
+            font-weight: bold;
+            font-family: "M+ 1m";
+            margin-top: 43px;
+            margin-bottom: 20px;
 
-                @include mq(sp){
-                    font-size: 100%;
-                }
-    
-            
-                >a {
-                    text-decoration: none;
-                    color: #707070;
-                    font-size: 24px;
-                    
-                    
-                }
-
+            @include mq(sp){
+                font-size: 100%;
             }
+
+        
+            >a {
+                text-decoration: none;
+                color: #707070;
+                font-size: 24px;
+                
+            }
+
+        }
     }
 }
 

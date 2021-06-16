@@ -17,9 +17,10 @@
         color: $font-color_title;
         margin-top: 82px;
         margin-bottom: 90px;
-
-    @include mq(md){
         display: none;
+
+    @include mq(pc){
+        display: block;
 
     }
 

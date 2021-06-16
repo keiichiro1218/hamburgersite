@@ -34,7 +34,6 @@ html:focus-within {
 
 /* Set core body defaults */
 body {
-  min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
 }
@@ -80,6 +79,10 @@ select {
 }
 a {
   text-decoration: none;
+}
+
+* {
+  font-family: "Roboto", "M+ 1m", sans-serif;
 }
 
 body.is-active {
@@ -331,10 +334,11 @@ input.font-awesome {
   color: #707070;
   margin-top: 82px;
   margin-bottom: 90px;
+  display: none;
 }
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 1199px) {
   .l-sidebar > p {
-    display: none;
+    display: block;
   }
 }
 
@@ -459,7 +463,6 @@ input.font-awesome {
   background: transparent;
   font-size: 34px;
   font-weight: bold;
-  font-family: Roboto;
   color: #707070;
   z-index: 4000;
 }
@@ -482,6 +485,7 @@ input.font-awesome {
 .c-menu-button__button {
   border: none;
   background: #FFF7EF;
+  color: #707070;
 }
 
 .c-menu-button__pc {
@@ -603,7 +607,7 @@ input.font-awesome {
 .p-archive__title h2 {
   font-size: 60px;
 }
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 500px) {
   .p-archive__title h2 {
     font-size: 30px;
   }
@@ -613,15 +617,12 @@ input.font-awesome {
   font-size: 28px;
   padding-left: 20px;
   vertical-align: middle;
+  padding-top: 10px;
 }
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 500px) {
   .p-archive__title p {
     font-size: 20px;
-  }
-}
-@media screen and (min-width: 1199px) {
-  .p-archive__title p {
-    padding-top: 10px;
+    padding-top: 0;
   }
 }
 

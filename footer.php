@@ -1,5 +1,4 @@
-</div>    
-    <div class="l-footer width-pc" >
+<div class="l-footer width-pc" >
         <div class="l-footer__contents">
             <?php
                 if (has_nav_menu( 'footer_nav' )){
