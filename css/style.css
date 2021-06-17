@@ -375,6 +375,12 @@ input.font-awesome {
 .c-drawer__icon.is-active {
   display: inline-block;
 }
+@media screen and (max-width: 620px) {
+  .c-drawer__icon {
+    top: 0;
+    right: 0;
+  }
+}
 
 .c-drawer__icon-bars {
   height: 40px;

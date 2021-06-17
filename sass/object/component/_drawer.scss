@@ -9,6 +9,11 @@
         display: inline-block;
     }
 
+    @include mq(mb){
+        top: 0;
+        right: 0;
+    }
+
 }
 
 .c-drawer__icon-bars {
