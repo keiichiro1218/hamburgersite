@@ -317,11 +317,6 @@ input.font-awesome {
   padding-left: 46px;
   position: relative;
 }
-@media screen and (min-width: 1199px) {
-  .l-sidebar {
-    padding-top: 40px;
-  }
-}
 @media screen and (max-width: 500px) {
   .l-sidebar {
     padding-left: 20px;
@@ -366,8 +361,8 @@ input.font-awesome {
 }
 
 .c-drawer__icon {
-  top: 0;
-  right: 0;
+  top: 50px;
+  right: 52px;
   position: absolute;
   z-index: 2300;
   display: none;
