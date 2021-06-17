@@ -482,8 +482,8 @@ input.font-awesome {
 @media screen and (max-width: 620px) {
   .c-menu-button {
     font-size: 30px;
-    top: 10px;
-    right: 10px;
+    top: 0px;
+    right: 0px;
   }
 }
 
