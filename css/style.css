@@ -317,6 +317,11 @@ input.font-awesome {
   padding-left: 46px;
   position: relative;
 }
+@media screen and (min-width: 1199px) {
+  .l-sidebar {
+    padding-top: 40px;
+  }
+}
 @media screen and (max-width: 500px) {
   .l-sidebar {
     padding-left: 20px;
@@ -361,7 +366,7 @@ input.font-awesome {
 }
 
 .c-drawer__icon {
-  top: 50px;
+  top: 30px;
   right: 52px;
   position: absolute;
   z-index: 2300;
@@ -1009,7 +1014,7 @@ input.font-awesome {
 }
 .p-menu .p-menu__text {
   font-size: 20px;
-  padding: 40px 20px;
+  padding: 40px 20px 60px;
   width: 50%;
   position: relative;
 }
@@ -1021,7 +1026,6 @@ input.font-awesome {
 .p-menu .p-menu__text h4 {
   font-size: 16px;
   font-weight: bold;
-  margin-top: 24px;
 }
 .p-menu .p-menu__text p {
   font-size: 16px;
