@@ -7,12 +7,6 @@
                     </div>
                 </div>
                 <div class="inner-main">
-                <?php 
-                    if ( has_post_thumbnail() ) {
-                        the_post_thumbnail('medium');
-                    }else{ ?>
-                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/noimage.jpg">
-                <?php } ?>
                     <?php if(have_posts()): while(have_posts()): the_post(); ?>
                         <div id="post-<?php the_ID(); ?>"<?php post_class(); ?>>
                             <div class="p-article-tag">
