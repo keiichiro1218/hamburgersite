@@ -134,5 +134,7 @@
         <div class="l-contents__right">
             <?php get_sidebar(); ?>
         </div>
+    </div>
+    <?php get_footer(); ?>
 </body>
 </html>
