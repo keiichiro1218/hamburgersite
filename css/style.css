@@ -255,7 +255,7 @@ input.font-awesome {
 .l-header__logo a h1 {
   margin-bottom: 38px;
   color: #707070;
-  font-size: 40px;
+  font-size: 60px;
   font-weight: bold;
 }
 @media screen and (min-width: 1199px) {
@@ -807,6 +807,11 @@ input.font-awesome {
   display: -ms-flexbox;
   display: flex;
   margin: 40px;
+}
+@media screen and (min-width: 1199px) {
+  .p-front {
+    margin-bottom: 455px;
+  }
 }
 @media screen and (max-width: 620px) {
   .p-front {

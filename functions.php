@@ -7,7 +7,7 @@ function my_setup()
   add_theme_support('title-tag'); // タイトルタグ自動生成
   add_theme_support(
     'html5',
-    array( //HTML5でマークアップ
+    array( 
       'search-form',
       'comment-form',
       'comment-list',
@@ -33,11 +33,6 @@ if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 add_action('wp_enqueue_scripts', 'my_script_init');
 
 
-
-
-
-
-
 add_theme_support( 'title-tag' );
 function setup_my_theme() {
   add_theme_support( 'title-tag' );
@@ -46,12 +41,42 @@ function setup_my_theme() {
 add_action( 'after_setup_theme', 'setup_my_theme');
 
 
-
-
 register_nav_menus( array(
   'sidebar_nav' => 'サイドバーメニュー',
   'footer_nav' => 'フッターメニュー'
 ));
+
+// カスタム投稿
+add_action('init', function() {
+  register_post_type('burger', [
+    'label' => 'バーガー',
+    'public' => true,
+    'menu_position' => 5,
+    'menu_icon' => 'dashicons-food',
+    'supports' => ['thumbnail', 'title', 'editor'],
+    'has_archive' => true
+  ]);
+
+  register_post_type('side', [
+    'label' => 'サイド',
+    'public' => true,
+    'menu_position' => 6,
+    'menu_icon' => 'dashicons-carrot',
+    'supports' => ['thumbnail', 'title', 'editor'],
+    'has_archive' => true
+  ]);
+
+  register_post_type('drink', [
+    'label' => 'ドリンク',
+    'public' => true,
+    'menu_position' => 7,
+    'menu_icon' => 'dashicons-coffee',
+    'supports' => ['thumbnail', 'title', 'editor'],
+    'has_archive' => true
+  ]);
+
+});
+
 
 // アイキャッチ画像を有効にする。
 add_theme_support('post-thumbnails');
