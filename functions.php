@@ -32,19 +32,32 @@ if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 
 add_action('wp_enqueue_scripts', 'my_script_init');
 
-
+// タブタイトル書き換え
 add_theme_support( 'title-tag' );
-function setup_my_theme() {
-  add_theme_support( 'title-tag' );
-}
+  function rewrite_title($title) {
+    if (is_home()) {
+      $title['tagline'] = '';
+    } else if (is_singular('burger')) {
+      $title['title'] =  $title['title'];
+    }
+    return $title;
+    }
+  add_filter('document_title_parts', 'rewrite_title');
 
-add_action( 'after_setup_theme', 'setup_my_theme');
+  function rewrite_separator($separator) {
+    $separator = '|';
+    return $separator;
+  }
+
+  add_filter('document_title_separator', 'rewrite_separator');
+
 
 
 register_nav_menus( array(
   'sidebar_nav' => 'サイドバーメニュー',
   'footer_nav' => 'フッターメニュー'
 ));
+
 
 // カスタム投稿
 add_action('init', function() {
@@ -76,6 +89,62 @@ add_action('init', function() {
   ]);
 
 });
+
+// カスタム投稿のurlをidへ
+function burger_post_type_link( $link, $post ){
+  if ( $post->post_type === 'burger' ) {
+    return home_url( '/burger/' . $post->ID );
+  } else {
+    return $link;
+  }
+}
+add_filter( 'post_type_link', 'burger_post_type_link', 1, 2 );
+
+function burger_rewrite_rules_array( $rules ) {
+  $new_rewrite_rules = array( 
+    'burger/([0-9]+)/?$' => 'index.php?post_type=burger&p=$matches[1]',
+  );
+  return $new_rewrite_rules + $rules;
+}
+add_filter( 'rewrite_rules_array', 'burger_rewrite_rules_array' );
+
+// カスタム投稿のurlをidへ
+function side_post_type_link( $link, $post ){
+  if ( $post->post_type === 'side' ) {
+    return home_url( '/side/' . $post->ID );
+  } else {
+    return $link;
+  }
+}
+add_filter( 'post_type_link', 'side_post_type_link', 1, 2 );
+
+function side_rewrite_rules_array( $rules ) {
+  $new_rewrite_rules = array( 
+    'side/([0-9]+)/?$' => 'index.php?post_type=side&p=$matches[1]',
+  );
+  return $new_rewrite_rules + $rules;
+}
+add_filter( 'rewrite_rules_array', 'side_rewrite_rules_array' );
+
+// カスタム投稿のurlをidへ
+function drink_post_type_link( $link, $post ){
+  if ( $post->post_type === 'drink' ) {
+    return home_url( '/drink/' . $post->ID );
+  } else {
+    return $link;
+  }
+}
+add_filter( 'post_type_link', 'drink_post_type_link', 1, 2 );
+
+function drink_rewrite_rules_array( $rules ) {
+  $new_rewrite_rules = array( 
+    'drink/([0-9]+)/?$' => 'index.php?post_type=drink&p=$matches[1]',
+  );
+  return $new_rewrite_rules + $rules;
+}
+add_filter( 'rewrite_rules_array', 'drink_rewrite_rules_array' );
+
+
 
 
 // アイキャッチ画像を有効にする。
