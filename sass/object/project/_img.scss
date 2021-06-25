@@ -1,9 +1,9 @@
 .p-img {
-    
-    margin: 0 120px;
+    margin: 50px;
 
-    @include mq(mb) {
-            margin: 50px;
+    @include media(mb-up) {
+            margin: 0 120px;
+            
     }
 
     img {

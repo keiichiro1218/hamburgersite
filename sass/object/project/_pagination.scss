@@ -1,11 +1,10 @@
 .p-pagenation {
-    
     height: 240px;
     align-items: center;
     display: flex;
     justify-content: center;
 
-    @include mq(md) {
+    @include media(tab) {
         width: 100%;
     
     }
@@ -20,8 +19,8 @@
     display: flex;
     list-style: none;
     text-decoration: none;
-    color: #3C2B1C;
-    border: solid 1px #3C2B1C;
+    color: $deep-brown;
+    border: solid 1px $deep-brown;
     padding: 10px;
 
     li {
@@ -35,7 +34,7 @@
 }
 
 .current {
-    border: solid 1px #3C2B1C;
-                    background-color: #3C2B1C;
-                    color: #fff;
+    border: solid 1px $deep-brown;
+    background-color: $deep-brown;
+    color: $white;
 }

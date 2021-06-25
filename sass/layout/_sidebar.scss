@@ -1,13 +1,9 @@
 .l-sidebar {
-    padding-left: 46px;
+    padding-left: 20px;
     position: relative;
-
-    @include mq(pc){
-        padding-top: 40px;
-    }
-
-    @include mq(sp){
-        padding-left: 20px;
+    
+    @include media(sp-up){
+        padding-left: 40px;
         
     }
 
@@ -20,11 +16,9 @@
         margin-bottom: 90px;
         display: none;
 
-    @include mq(pc){
-        display: block;
+        @include media(pc){
+            display: block;
 
-    }
-
-    
+        }
     }
 }

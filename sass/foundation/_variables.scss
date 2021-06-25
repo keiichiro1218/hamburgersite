@@ -1,11 +1,21 @@
 $breakpoints: (
-  'pc': 'screen and (min-width: 1200px)',
   'pcwide': 'screen and (min-width: 1500px)',
-  'md': 'screen and (max-width: 1199px)',
+  'pc': 'screen and (min-width: 1199px)',
+  'tab': 'screen and (max-width: 1199px)',
   'mb': 'screen and (max-width: 620px)',
+  'mb-up': 'screen and (min-width: 620px)',
   'sp': 'screen and (max-width: 500px)',
+  'sp-up': 'screen and (min-width: 501px)'
 ) !default;
 
 $font-color_title: #707070;
 $background-color_pink:#FFF7EF;
+$background-color_brown:#9D8670;
+$background-color_gray: #F5F5F5;
+$white: #ffff;
+$deep-brown: #3C2B1C;
+$button-background: #F2EDE9;
+$black: #000000;
+$font-white: #EAEAEA;
+
 

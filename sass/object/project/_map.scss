@@ -1,19 +1,18 @@
 .p-map {
     width: 100%;
 
-    @include mq(pc) {
+    @include media(pc) {
         position: absolute;
         bottom: 0;
         left: 0;
     }
 
-
     &__item {
         position: relative;
-        height: 415px;
+        height: 700px;
 
-        @include mq(mb) {
-            height: 700px;
+        @include media(mb-up) {
+            height: 415px;
         }
 
         iframe {
@@ -32,7 +31,7 @@
             background: rgba(0, 0, 0, 0.29);
             height: 100%;
             padding: 40px;
-            color: #FFFFFF;
+            color: $white;
 
             h3{
                 font-size: 30px;

@@ -1,33 +1,32 @@
 .c-menu-button {
     position: absolute;
-    top: 18px;
-    right: 26px;
+    top: 0px;
+    right: 0px;
     border: none;
     background: transparent;
-    font-size: 34px;
+    font-size: 30px;
     font-weight: bold;
     z-index: 4000;
 
     &.is-active {
         display: none;
     }
+
+    @include media(mb-up){
+        top: 18px;
+        right: 26px;
+        font-size: 34ox;
+    }
     
-    @include mq(pc) {
+    @include media(pc) {
         display: none;
         
     }
-
-    @include mq(mb) {
-        font-size: 30px;
-        top: 0px;
-        right: 0px;
-    }
-    
 }
 
 .c-menu-button__button {
     border: none;
-    background: #FFF7EF;
+    background: $background-color_pink;
     color: $font-color_title;
 }
 
@@ -39,12 +38,10 @@
     background: transparent;
     font-size: 34px;
     font-weight: bold;
-    font-family: Roboto;
-    color: #707070;
+    color: $font-color_title;
     display: none;
     
-    @include mq(pc) {
+    @include media(pc) {
         display: block;
     }
-    
 }

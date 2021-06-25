@@ -1,5 +1,5 @@
 .l-footer {
-    background: #9D8670;
+    background: $background-color_brown;
     height: 150px;
     width: 100%;
     z-index: 1;
@@ -11,7 +11,7 @@
 
 .l-footer__contents p{
     text-align: center;
-    color: white;
+    color: $white;
     
     small {
         margin: 0 auto;
@@ -19,28 +19,26 @@
 }
 
 .l-footer__content {
-    color: #ffff;
+    color: $white;
     display: inline-block;
 
     ul {
         display: flex;
         list-style: none;
         
-
         li {
 
             >a {
-                color: white;
+                color: $white;
                 text-decoration: none;
                 padding: 5px;
 
             }
-
-            
         }
+
         li:nth-child(n + 2) {
-            border-left: solid 2px white;
+            border-left: solid 2px $white;
+
         }
     }
-
 }

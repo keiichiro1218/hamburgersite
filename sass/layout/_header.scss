@@ -1,21 +1,15 @@
 .l-header {
     height: 217px;
-    background: #FFF7EF;
+    background: $background-color_pink;
     position: relative;
+    width: 100%;
 
-    @include mq(pc) {
+    @include media(pc) {
         width: 75%;
         position: relative;
     }
 
-    @include mq(mb) {
-        width: 100%;
-        height: 217px;
-       
-    }
-
     &__inner{
-    
         text-align: center;
         position: absolute;
         top: 50%;
@@ -23,7 +17,7 @@
         width: 100%;
         margin: 0 auto;
         
-        @include mq(pc) {
+        @include media(pc) {
             margin: 0;
             display: flex;
             justify-content: space-between;
@@ -36,28 +30,24 @@
 }
 
 .l-header__logo {
-    margin-left: 60px;
     
-    @include mq(mb) {
-        margin-left: 0px;       
+    @include media(mb-up) {
+        margin-left: 60px;       
     }
     
     a h1 {
-        margin-bottom: 38px;
+        margin-bottom: 20px;
+        font-size: 40px;
         color: $font-color_title;
-        font-size: 60px;
         font-weight: bold;
         
-        @include mq(pc) {
+        @include media(pc) {
             margin-bottom: 0px;
         }
         
-        @include mq(sp){
-            margin-bottom: 20px;
-            font-size: 40px;
-        }
-        
+        @include media(sp-up){
+            margin-bottom: 38px;
+            font-size: 60px;
+        }   
     }
-    
-    
 }

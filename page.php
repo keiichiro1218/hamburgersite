@@ -32,7 +32,7 @@
                         <p>出典元：<a href="">○○○○○○○○○○○○</a></p>
                     </div>
                     <div class="p-content-img">
-                        <img src="<?php echo esc_url( get_template_directory_uri()); ?>/img/cooked-foods-750073.png" alt="">
+                        <img src="<?php echo esc_url( get_template_directory_uri()); ?>/img/cooked-foods-750073-2.png" alt="">
                     </div>
                     <div class="p-visual">
                         <div class="p-visual__contents ">
@@ -51,17 +51,17 @@
                     <div class="p-img">
                         <img src="<?php echo esc_url( get_template_directory_uri()); ?>/img/cooked-foods-750073-2.png" alt="">
                     </div>
-                    <div class="p-flex-container">
-                        <div class="p-flex-container__items ">
-                            <div class="p-flex-container__item"><img src="<?php echo esc_url( get_template_directory_uri()); ?>/img/cooked-foods-750073-2.png" alt=""></div>
-                            <div class="p-flex-container__item"><img src="<?php echo esc_url( get_template_directory_uri()); ?>/img/cooked-foods-750073-2.png" alt=""></div>
-                            <div class="p-flex-container__item"><img src="<?php echo esc_url( get_template_directory_uri()); ?>/img/cooked-foods-750073-2.png" alt=""></div>
-                            <div class="p-flex-container__item"><img src="<?php echo esc_url( get_template_directory_uri()); ?>/img/cooked-foods-750073-2.png" alt=""></div>
-                            <div class="p-flex-container__item"><img src="<?php echo esc_url( get_template_directory_uri()); ?>/img/cooked-foods-750073-2.png" alt=""></div>
-                            <div class="p-flex-container__item"><img src="<?php echo esc_url( get_template_directory_uri()); ?>/img/cooked-foods-750073-2.png" alt=""></div>
-                            <div class="p-flex-container__item"><img src="<?php echo esc_url( get_template_directory_uri()); ?>/img/cooked-foods-750073-2.png" alt=""></div>
-                            <div class="p-flex-container__item"><img src="<?php echo esc_url( get_template_directory_uri()); ?>/img/cooked-foods-750073-2.png" alt=""></div>
-                            <div class="p-flex-container__item"><img src="<?php echo esc_url( get_template_directory_uri()); ?>/img/cooked-foods-750073-2.png" alt=""></div>
+                    <div class="p-flex">
+                        <div class="p-flex__items ">
+                            <div class="p-flex__item"><img src="<?php echo esc_url( get_template_directory_uri()); ?>/img/cooked-foods-750073-2.png" alt=""></div>
+                            <div class="p-flex__item"><img src="<?php echo esc_url( get_template_directory_uri()); ?>/img/cooked-foods-750073-2.png" alt=""></div>
+                            <div class="p-flex__item"><img src="<?php echo esc_url( get_template_directory_uri()); ?>/img/cooked-foods-750073-2.png" alt=""></div>
+                            <div class="p-flex__item"><img src="<?php echo esc_url( get_template_directory_uri()); ?>/img/cooked-foods-750073-2.png" alt=""></div>
+                            <div class="p-flex__item"><img src="<?php echo esc_url( get_template_directory_uri()); ?>/img/cooked-foods-750073-2.png" alt=""></div>
+                            <div class="p-flex__item"><img src="<?php echo esc_url( get_template_directory_uri()); ?>/img/cooked-foods-750073-2.png" alt=""></div>
+                            <div class="p-flex__item"><img src="<?php echo esc_url( get_template_directory_uri()); ?>/img/cooked-foods-750073-2.png" alt=""></div>
+                            <div class="p-flex__item"><img src="<?php echo esc_url( get_template_directory_uri()); ?>/img/cooked-foods-750073-2.png" alt=""></div>
+                            <div class="p-flex__item"><img src="<?php echo esc_url( get_template_directory_uri()); ?>/img/cooked-foods-750073-2.png" alt=""></div>
                         </div>
                     </div>
                     <div class="p-lists">

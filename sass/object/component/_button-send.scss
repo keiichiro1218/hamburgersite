@@ -1,11 +1,11 @@
 .c-button-send {
-   padding: 40px 190px;
+   padding: 30px 145px;
    border-radius: 20px;
-   border: solid 1px #707070;
+   border: solid 1px $font-color_title;
    background: linear-gradient(#F2EDE9, #DED8D3);
    
-   @include mq(mb) {      
-      padding: 30px 145px;
+   @include media(mb-up) {  
+      padding: 40px 190px;    
 
    }
 }

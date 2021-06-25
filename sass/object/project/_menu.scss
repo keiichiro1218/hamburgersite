@@ -1,17 +1,15 @@
 .p-menu {
-    display: flex;
-    margin-top: 36px;
-    background: #3C2B1C;
-    color: #FFFFFF;
-    height: 317px;
+    display: block;
+    background: $deep-brown;
+    color: $white;
+    height: auto;
 
-    @include mq(mb) {
-        
-        flex-direction: column;
+    @include media(mb-up) {
+        display: flex;
+        margin-top: 36px;
+        height: 317px;
         width: auto;
-        height: auto;
-        margin: 0 20px;
-        
+
     }
 
     &:nth-child(n+2) {
@@ -22,10 +20,8 @@
         width: 50%;
         height: auto;
 
-        @include mq(mb) {
-        
+        @include media(mb) {
             width: 100%;
-            
             
         }
     }
@@ -33,23 +29,30 @@
     .p-menu__text {
         font-size: 20px;
         padding: 40px 20px 60px;
-        width: 50%;
+        width: 100%;
         position: relative;
         
-        @include mq(mb) {
-            width: 100%;
+        @include media(mb-up) {
+            width: 50%;
+            
+        }
+
+        @include media(tab) {
+            padding: 20px 20px 60px;
             
         }
         
         h4 {
             font-size: 16px;
             font-weight: bold;
+
         }
         
         p {
             font-size: 16px;
             margin-top: 10px;
             margin-bottom: 45px;
+            
         }
         
         .p-menu__button {

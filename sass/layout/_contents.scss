@@ -1,15 +1,13 @@
 .l-contents {
     display: flex;
 
-
     &__left {
     width: 100%;
     position: relative;
 
-    @include mq(pc) {
-        width: 75%;
-    }
-
+        @include media(pc) {
+            width: 75%;
+        }
     }
 
     &__right {
@@ -36,7 +34,7 @@
             
             }
         
-        @include mq(pc) {
+        @include media(pc) {
             width: 25%;
             display: block;
         }

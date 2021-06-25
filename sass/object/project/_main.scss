@@ -1,36 +1,27 @@
 .p-main {
     position: relative;
     width: 100%;
-    height: 530px;
-    background: url(../img/hero1.jpg) no-repeat center;
+    background: url(../img/hero3.png) no-repeat center;
+    height: 225px;
     background-size: cover;
 
-
-    @include mq(md) {
-        
-        background-image: url(../img/hero1.jpg) ;
-       
-    }
-
-    @include mq(mb) {
-        
-        background-image: url(../img/hero3.png);
-        height: 225px;
+    @include media(mb-up) {
+        background: url(../img/hero1.jpg) no-repeat center;
+        height: 530px;
         
     }
     
     &__title {
-        font-size: 44px;
-        color: #EAEAEA;
+        font-size: 36px;
+        color: $font-white;
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
         margin-left: 40px;
         
-        @include mq(mb) {
-            font-size: 36px;
+        @include media(mb-up) {
+            font-size: 44px;
         }
-        
     }
 }
 

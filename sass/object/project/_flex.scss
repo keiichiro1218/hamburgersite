@@ -1,0 +1,62 @@
+.p-flex {
+    margin-top: 240px;
+
+    &__items {
+        display: block;
+      
+        @include media(mb-up) {
+            display: flex;
+            flex-wrap: wrap;
+            
+        }
+    }
+}
+
+.p-flex__item {
+    
+    @include media(pc) {
+        width: 32%;
+        
+        &:not(:nth-child(3n + 1)){
+            margin-left: 1%;
+        }
+        
+        &:nth-child(n + 4) {
+            margin-top: 10px;
+        }
+    }
+    
+    @include media(tab) {
+        width: 48%;
+        
+        &:nth-child(n + 3) {
+            margin-top: 20px;
+            
+        }
+        
+        &:nth-child(even) {
+            margin-left: 2%;
+        }
+        
+    }
+    
+    @include media(mb) {
+        width: 100%;
+
+        &:nth-child(even) {
+            margin-left: 0px;
+        }
+
+        &:nth-child(n + 2) {
+            margin-top: 20px;
+    
+        }
+            
+    }
+    
+    img {
+        @include media(mb) {
+            width: 100%;
+        }
+    }
+}

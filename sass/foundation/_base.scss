@@ -32,27 +32,34 @@ html {
   }
 
 .inner {
-    margin: 0 10%;
+    margin: 0 5%;
 
-    @include mq(mb){
-        margin: 0 5%;
+    @include media(mb-up){
+        margin: 0 10%;
     }
 
 }
 
 .inner-main {
-    margin: 100px 10%;
+    margin: 100px 5%;
 
-    @include mq(md){
-        margin: 100px 5%;
+    @include media(tab){
+        margin: 100px 10%;
     }
 
+    @include media(pc){
+        margin: 100px 10%;
+    }
+
+    @include media(pcwide){
+        margin: 100px 15%;
+    }
 }
 
 .width-pc {
     width: 100%;
 
-    @include mq(pc) {
+    @include media(pc) {
         width: 75%;
         
     }

@@ -23,13 +23,13 @@
     margin-top: 60px;
     margin-bottom: 150px;
 
-    @include mq(md){
+    @include media(tab){
         margin-bottom: 200px;
     }
 
     >a {
-        background: #9D8670;
-        color: white;
+        background: $background-color_brown;
+        color: $white;
         padding: 30px 42px;
         border-radius: 40px;
         font-size: 16px;

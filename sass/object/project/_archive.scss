@@ -1,54 +1,51 @@
 .p-archive {
     position: relative;
-    background: #000000;
+    background: $black;
     z-index: -15;
 
     &__img {
         height: 240px;
-    background: url(../img/burg1.png) no-repeat center;
+        background: url(../img/burg1.png) no-repeat center;
     
     }
 }
 
-    .p-archive__title {
-        color: #FFFFFF;
-        display: flex;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        margin-left: 80px;
-        align-items: center;
-        
+.p-archive__title {
+    color: $white;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 80px;
+    align-items: center;
+    
+    h2 {
+        font-size: 60px;
 
-        h2 {
-            font-size: 60px;
-
-            @include mq(sp) {
-               font-size: 30px;
-        
-            }
+        @include media(sp) {
+            font-size: 30px;
+    
         }
-
-        p {
-            color: #fff;
-            font-size: 28px;
-            padding-left: 20px;
-            vertical-align: middle;
-            padding-top: 10px;
-            
-            @include mq(sp) {
-                font-size: 20px;
-                padding-top: 0;
-        
-            }
-       }
     }
 
+    p {
+        color: $white;
+        font-size: 28px;
+        padding-left: 20px;
+        vertical-align: middle;
+        padding-top: 10px;
+        
+        @include media(sp) {
+            font-size: 20px;
+            padding-top: 0;
+    
+        }
+    }
+}
+
 .p-archive-text {
-    margin-top: 36px;
-    margin-bottom: 36px;
-
-
+margin-top: 36px;
+margin-bottom: 36px;
 
     h3 {
         font-size: 36px;
@@ -58,6 +55,4 @@
         font-size: 16px;
         margin-top: 25px;
     }
-
-
 }

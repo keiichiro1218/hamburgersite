@@ -1,14 +1,14 @@
 .p-front {
-    display: flex;
-    margin: 40px;
+    display: block;
+    margin: 20px;
 
-    @include mq(pc) {
-        margin-bottom: 455px;
+    @include media(mb-up) {
+        display: flex;
+        margin: 40px;
     }
 
-    @include mq(mb) {
-        display: block;
-        margin: 20px;
+    @include media(pc) {
+        margin-bottom: 455px;
     }
     
     &__takeout {

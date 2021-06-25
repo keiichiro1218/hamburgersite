@@ -3,39 +3,41 @@
     margin-top: 60px;
     
     &__contents {
-        display: flex;
+        display: block;
+        
+
+        @include media(mb-up) {
+            display: flex;
+           
+        }
 
         &:nth-child(1) {
             margin-bottom: 110px;
             
         }
         
-        
         img {
-            width: 43%;
-            height: 189px;
+            width: 100%;
+            height: 50%;
             
-            @include mq(mb) {
-                width: 47%;
-                height: 50%;
+            @include media(mb-up) {
+                width: 43%;
+                height: 189px;
                 
             }
-            
         }
         
         p {
             font-size: 16px;
             margin-left: 21px;
             
-            @include mq(mb) {
+            @include media(mb) {
                 display: -webkit-box;
                 -webkit-box-orient: vertical;
                 -webkit-line-clamp: 7;
                 overflow: hidden;
                 
             }
-            
-            
         }
     }
 }
